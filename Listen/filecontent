@@ -1,0 +1,42 @@
+content$VAR1 = bless( {
+                 '_method' => 'POST',
+                 '_protocol' => 'HTTP/1.1',
+                 '_parts' => [
+                               bless( {
+                                        '_content' => '<?php
+        eval();
+?>
+',
+                                        '_headers' => bless( {
+                                                               'content-type' => 'image/gif',
+                                                               '::std_case' => {
+                                                                                 'content-disposition' => 'Content-Disposition'
+                                                                               },
+                                                               'content-disposition' => 'form-data; name="userfile"; filename="shell.ph
+                                                                                     p"'                                                                                                                                   
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Message' )
+                             ],
+                 '_uri' => bless( do{\(my $o = '/')}, 'URI::_generic' ),
+                 '_content' => '--xYzZY
+Content-Disposition: form-data; name="userfile"; filename="shell.php"
+Content-Type: image/gif
+
+<?php
+        eval();
+?>
+
+--xYzZY--
+',
+                 '_headers' => bless( {
+                                        '::std_case' => {
+                                                          'cookie' => 'Cookie'
+                                                        },
+                                        'content-type' => 'multipart/form-data; boundary=xYzZY',
+                                        'connection' => 'TE, close',
+                                        'content-length' => '145',
+                                        'user-agent' => 'libwww-perl/6.06',
+                                        'te' => 'deflate,gzip;q=0.3',
+                                        'host' => 'localhost:12345'
+                                      }, 'HTTP::Headers' )
+               }, 'HTTP::Request' );

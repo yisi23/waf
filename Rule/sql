@@ -1,0 +1,16 @@
+SQL:1
+SQL:\w*((%27)|(\'))\w*((%6F)|o|(%4F))((%72)|r|(%52))\w*
+SQL:((%27)|(\'))union
+SQL:exec(\s|\+)+(s|x)p\w+
+SQL:select|union|update|delete|insert|table|from|ascii|hex|unhex|drop
+SQL:\w*((%27)|(\'))\w*(and|or)
+SQL:(%00)
+SQL:char\((\w+|\d+|.)\)
+SQL:(\'(\w+)\'\+\'(\w+)\')|(\'(\w+)\'\|\|\'(\w+)\')|(concat\((\w+),(\w+)\))|(concat\((\'\w+\'),(\'\w+\')\))|(("(\w+)")&("(\w+)"))
+SQL:substring\((\w+|\d+)\)
+SQL:%27\+or\+1%3D1%3B--
+SQL:((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))
+SQL:((\%27)|(\'))union
+XSS:((%3C)|<) ((%2F)|\/) * [a-z0-9%]+ ((%3E)|>)
+XSS:((%3C)|<) ((%69)|i|(%49)) ((%6D)|m|(%4D)) ((%67)|g|(%47)) [^\n]+ ((%3E)|>)
+XSS:2
