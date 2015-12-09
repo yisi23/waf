@@ -4,7 +4,7 @@ use Crypt::SaltedHash;
 #数据库信息
 my $source = "DBI:mysql:oa:database=waf;host=localhost;";
 my $data_username = "root";
-my $data_password = "19910230";
+my $data_password = "1";
 
 
   
