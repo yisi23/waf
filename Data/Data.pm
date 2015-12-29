@@ -19,7 +19,7 @@ has 'requestinfo' => (
 #数据库信息
 my $source = "DBI:mysql:oa:database=waf;host=localhost;";
 my $username = "root";
-my $password = "19910230";
+my $password = "test";
 
 sub sqlconnect{
   return DBI->connect($source, $username, $password)
